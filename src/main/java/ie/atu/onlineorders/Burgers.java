@@ -26,4 +26,13 @@ class Burgers implements MenuItems {
     public double getPrice() {
         return price;
     }
+
+    @Override
+    public String toString() {
+        return "Burgers{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", ingredients='" + ingredients + '\'' +
+                '}';
+    }
 }

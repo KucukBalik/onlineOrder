@@ -7,4 +7,8 @@ public interface MenuItems {
     String getDescription();
 
     double getPrice();
+
+
+
+
 }
