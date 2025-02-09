@@ -14,8 +14,18 @@ public class OnlineOrderSystem {
         items.add(new Salad("Caesar Salad", 6.49, "Lettuce, Croutons, Caesar Dressing"));
 
         for (MenuItems item : items) {
-            System.out.println(item.toString());
+            System.out.println("Name: " + item.getName());
+            System.out.println("Price: " + item.getPrice());
+            System.out.println("Description: " + item.getDescription());
         }
+
+        double totalPrice = 0;
+
+        for (MenuItems item : items) {
+            totalPrice += item.getPrice();
+        }
+
+        System.out.println("Total price: " + totalPrice);
 
     }
 }
